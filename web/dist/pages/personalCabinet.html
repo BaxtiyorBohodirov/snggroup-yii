@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="shortcut icon"
+			href="../assets/img/logo/favicon.ico"
+			type="image/x-icon"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../assets/fonts/font-awesome/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../assets/fonts/font-awesome/css/light.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../assets/fonts/font-awesome/css/duotone.min.css"
+		/>
+		<link rel="stylesheet" href="../css/global.css" />
+		<title>Личный кабинет</title>
+	</head>
+	<body>
+		<div class="personalCabinet-flex-content">
+			<header class="main-header">
+				<div class="container-lg">
+					<nav class="main-header-nav">
+						<a href="#" class="main-header-brand">
+							<img
+								src="../assets/img/imkon-sugurta-logo.png"
+								draggable="false"
+								alt=""
+							/>
+						</a>
+
+						<div class="main-header-nav-group">
+							<a href="#" class="main-header-nav-link">О компании</a>
+							<a href="#" class="main-header-nav-link">Физическим лицам</a>
+							<a href="#" class="main-header-nav-link">Юридическим лицам</a>
+							<a href="#" class="main-header-nav-link">Медиа</a>
+							<a href="#" class="main-header-nav-link">Контакты</a>
+						</div>
+
+						<div class="main-header-actions">
+							<button type="button" class="btn btn-icon main-header-action">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									aria-hidden="true"
+									class="svg-dimmed"
+									role="img"
+									width="30"
+									height="30"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</button>
+
+							<button type="button" class="btn btn-icon main-header-action">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									aria-hidden="true"
+									class="svg-dimmed"
+									width="30"
+									height="30"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</button>
+
+							<button type="button" class="btn btn-icon p-0 main-header-action">
+								<div class="main-header-contact-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										aria-hidden="true"
+										width="30"
+										height="30"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</div>
+							</button>
+
+							<div class="main-header-lang-dropdown ms-3">
+								<button
+									type="button"
+									class="btn lang-btn dropdown-toggle"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									RU
+								</button>
+								<ul
+									class="
+										mt-1
+										main-header-lang-dropdown
+										dropdown-menu dropdown-menu-end
+									"
+								>
+									<li>
+										<button class="dropdown-item" type="button">RU</button>
+									</li>
+									<li>
+										<button class="dropdown-item" type="button">UZ</button>
+									</li>
+								</ul>
+							</div>
+
+							<button
+								type="button"
+								class="btn nav-drawer-open-btn ms-lg-2"
+								id="mainHeaderNavDrawerToggler"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									aria-hidden="true"
+									width="32"
+									height="32"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z"
+										fill="currentColor"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</nav>
+				</div>
+
+				<aside class="main-header-navigation-drawer">
+					<div class="main-header-navigation-drawer__content">
+						<div class="main-header-drawer-group">
+							<a href="#" class="main-header-drawer-link active">О компании</a>
+							<a href="#" class="main-header-drawer-link">Физическим лицам</a>
+							<a href="#" class="main-header-drawer-link">Юридическим лицам</a>
+							<a href="#" class="main-header-drawer-link">Медиа</a>
+							<a href="#" class="main-header-drawer-link">Контакты</a>
+						</div>
+					</div>
+				</aside>
+				<div class="main-header-navigation-drawer__overlay"></div>
+			</header>
+
+			<main class="personalCabinet-page">
+				<div
+					class="pages-hero"
+					style="background-image: url('../assets/img/hero-imgs/hero7.png')"
+				>
+					<div class="pages-hero__content">
+						<h3 class="main-title-lg">Личный кабинет</h3>
+
+						<ul class="pages-breadcrumbs">
+							<li class="pages-breadcrumbs-item">
+								<a href="#" class="pages-breadcrumbs-link">Главная</a>
+							</li>
+							<li class="pages-breadcrumbs-item pages-breadcrumbs__line"></li>
+							<li class="pages-breadcrumbs-item">
+								<a href="#" class="pages-breadcrumbs-link">Личный кабинет</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<ul class="nav personalCabinet-nav" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button
+							id="myProfile-tab"
+							class="active"
+							data-bs-toggle="tab"
+							data-bs-target="#myProfile"
+							type="button"
+							role="tab"
+							aria-controls="myProfile"
+							aria-selected="true"
+						>
+							Мой профиль
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="myPolicies-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#myPolicies"
+							type="button"
+							role="tab"
+							aria-controls="myPolicies"
+							aria-selected="false"
+						>
+							Мои полисы
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="changePassword-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#changePassword"
+							type="button"
+							role="tab"
+							aria-controls="changePassword"
+							aria-selected="false"
+						>
+							Поменять пароль
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="changePhone-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#changePhone"
+							type="button"
+							role="tab"
+							aria-controls="changePhone"
+							aria-selected="false"
+						>
+							Поменять номер телефона
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="refundStatus-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#refundStatus"
+							type="button"
+							role="tab"
+							aria-controls="refundStatus"
+							aria-selected="false"
+						>
+							Статус возвратов
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button
+							id="insuranceCase-tab"
+							data-bs-toggle="tab"
+							data-bs-target="#insuranceCase"
+							type="button"
+							role="tab"
+							aria-controls="insuranceCase"
+							aria-selected="false"
+						>
+							Страховой случай
+						</button>
+					</li>
+					<div class="personalCabinetNavShowMore-dropdown">
+						<button
+							class="btn btn-icon"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								aria-hidden="true"
+								width="24"
+								height="24"
+								preserveAspectRatio="xMidYMid meet"
+								viewBox="0 0 24 24"
+							>
+								<g fill="none">
+									<path
+										d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0zm0-6a2 2 0 1 0 4 0a2 2 0 0 0-4 0zm0 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0z"
+										fill="currentColor"
+									></path>
+								</g>
+							</svg>
+						</button>
+
+						<ul
+							class="
+								mt-1
+								personal-cabinet-nav-dropdown
+								dropdown-menu dropdown-menu-end
+							"
+						>
+							<li>
+								<button
+									class="dropdown-item active"
+									type="button"
+									data-target="#myProfile-tab"
+								>
+									Мой профиль
+								</button>
+							</li>
+							<li>
+								<button
+									class="dropdown-item"
+									type="button"
+									data-target="#myPolicies-tab"
+								>
+									Мои полисы
+								</button>
+							</li>
+							<li>
+								<button
+									class="dropdown-item"
+									type="button"
+									data-target="#changePassword-tab"
+								>
+									Поменять пароль
+								</button>
+							</li>
+							<li>
+								<button
+									class="dropdown-item"
+									type="button"
+									data-target="#changePhone-tab"
+								>
+									Поменять номер телефона
+								</button>
+							</li>
+							<li>
+								<button
+									class="dropdown-item"
+									type="button"
+									data-target="#refundStatus-tab"
+								>
+									Статус возвратов
+								</button>
+							</li>
+							<li>
+								<button
+									class="dropdown-item"
+									type="button"
+									data-target="#insuranceCase-tab"
+								>
+									Страховой случай
+								</button>
+							</li>
+						</ul>
+					</div>
+				</ul>
+				<div class="container-md my-3">
+					<div class="tab-content mb-4" id="personalCabinetContent">
+						<div
+							class="tab-pane fade show active"
+							id="myProfile"
+							role="tabpanel"
+							aria-labelledby="myProfile-tab"
+						>
+							<h4 class="main-title-md text-md-start text-center mt-4">
+								Настройки профиля
+							</h4>
+
+							<div
+								class="d-flex flex-md-row flex-column align-items-center mt-3"
+							>
+								<div class="row pe-4" style="flex: 1">
+									<div class="col-md-6 px-md-2 px-0 mb-md-0 mb-2">
+										<input
+											type="text"
+											class="form-control custom-form-control"
+											placeholder="Серия паспорта"
+										/>
+									</div>
+									<div class="col-md-6 px-md-1 px-0 mb-md-0 mb-2">
+										<div class="custom-form-control--input--icon">
+											<input type="text" placeholder="ПИНФЛ" />
+
+											<div class="custom-form--icon-wrapper">
+												<button
+													type="button"
+													class="custom-form--icon"
+													data-bs-toggle="tooltip"
+													data-bs-placement="top"
+													title="Tooltip on top"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+														aria-hidden="true"
+														width="25"
+														height="25"
+														preserveAspectRatio="xMidYMid meet"
+														viewBox="0 0 24 24"
+													>
+														<path
+															fill="currentColor"
+															d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 16a1 1 0 1 1 1-1a1 1 0 0 1-1 1zm1-5.16V14a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1a1.5 1.5 0 1 0-1.5-1.5a1 1 0 0 1-2 0a3.5 3.5 0 1 1 4.5 3.34z"
+														></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn custom-primary-btn px-5">
+									Сохранить
+								</button>
+							</div>
+
+							<div class="my-5">
+								<h5 class="main-title-sm">Удалить профиль</h5>
+
+								<div class="my-3 mb-4" style="max-width: 750px">
+									<p>
+										Как только вы нажмете кнопку ниже, все ваши данные будут
+										безвозвратно удалены без возможности восстановления. Вы
+										действительно хотите удалить свой профиль?
+									</p>
+								</div>
+
+								<button type="button" class="btn custom-red-btn">
+									Удалить профиль
+								</button>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade my-policies-tab"
+							id="myPolicies"
+							role="tabpanel"
+							aria-labelledby="myPolicies-tab"
+						>
+							<h4 class="main-title-md mt-4 mb-3">Мои полисы</h4>
+
+							<select
+								class="form-select custom-form-select"
+								aria-label="Default select example"
+							>
+								<option selected>Open this select menu</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+
+							<div class="row justify-content-center mb-5">
+								<div
+									class="col-xl-4 col-lg-5 col-sm-6 col-12"
+									style="max-width: 390px"
+								>
+									<div class="my-policies-card">
+										<div class="my-policies-card-img-wrapper">
+											<img
+												src="https://images.pexels.com/photos/6934264/pexels-photo-6934264.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												draggable="false"
+												alt=""
+											/>
+										</div>
+
+										<div class="my-policies-card-content">
+											<span class="my-policies-card-comment">№1234</span>
+											<div class="my-policies-card-title">КАСКО</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Страхователь
+												</div>
+												<p>Lorem ipsum</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Период действия
+												</div>
+												<p>10.06.2021 - 10.06.2022</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">Стоимость</div>
+												<p>220 000 сум</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="col-xl-4 col-lg-5 col-sm-6 col-12"
+									style="max-width: 390px"
+								>
+									<div class="my-policies-card">
+										<div class="my-policies-card-img-wrapper">
+											<img
+												src="https://images.pexels.com/photos/6934264/pexels-photo-6934264.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												draggable="false"
+												alt=""
+											/>
+										</div>
+
+										<div class="my-policies-card-content">
+											<span class="my-policies-card-comment">№1234</span>
+											<div class="my-policies-card-title">КАСКО</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Страхователь
+												</div>
+												<p>Lorem ipsum</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Период действия
+												</div>
+												<p>10.06.2021 - 10.06.2022</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">Стоимость</div>
+												<p>220 000 сум</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="col-xl-4 col-lg-5 col-sm-6 col-12"
+									style="max-width: 390px"
+								>
+									<div class="my-policies-card">
+										<div class="my-policies-card-img-wrapper">
+											<img
+												src="https://images.pexels.com/photos/6934264/pexels-photo-6934264.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+												draggable="false"
+												alt=""
+											/>
+										</div>
+
+										<div class="my-policies-card-content">
+											<span class="my-policies-card-comment">№1234</span>
+											<div class="my-policies-card-title">КАСКО</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Страхователь
+												</div>
+												<p>Lorem ipsum</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">
+													Период действия
+												</div>
+												<p>10.06.2021 - 10.06.2022</p>
+											</div>
+
+											<div class="my-policies-desc">
+												<div class="my-policies-card-title-sm">Стоимость</div>
+												<p>220 000 сум</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="changePassword"
+							role="tabpanel"
+							aria-labelledby="changePassword-tab"
+						>
+							<h4 class="main-title-md mt-4 mb-3">Поменять пароль</h4>
+
+							<div class="row my-3">
+								<div class="col-lg-4 col-sm-6 px-2">
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control custom-form-control"
+											placeholder="Старый пароль"
+										/>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 px-2">
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control custom-form-control"
+											placeholder="Новый пароль"
+										/>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6 px-2">
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control custom-form-control"
+											placeholder="Повторите новый пароль"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="btn custom-primary-btn px-5">
+								Сохранить
+							</button>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="changePhone"
+							role="tabpanel"
+							aria-labelledby="changePhone-tab"
+						>
+							<h4 class="main-title-md mt-4 mb-3">Поменять номер телефона</h4>
+
+							<div class="row my-2">
+								<div class="col-lg-4 col-sm-6 px-2">
+									<div class="mb-3">
+										<input
+											type="text"
+											class="form-control custom-form-control"
+											placeholder="Новый номер телефона"
+										/>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="btn custom-primary-btn px-5">
+								Сохранить
+							</button>
+						</div>
+
+						<div
+							class="tab-pane fade refund-status-tab"
+							id="refundStatus"
+							role="tabpanel"
+							aria-labelledby="refundStatus-tab"
+						>
+							<h4 class="main-title-md mt-4 mb-3">Статус возврата</h4>
+
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th style="min-width: 120px">Номер</th>
+											<th style="min-width: 120px">Дата подачи</th>
+											<th style="min-width: 150px">Статус</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>
+												<button
+													type="button"
+													class="btn custom-primary-btn--outline px-5 py-2"
+												>
+													Выполнено
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Jacob</td>
+											<td>Thornton</td>
+											<td>
+												<button
+													type="button"
+													class="btn custom-primary-btn px-5 py-2"
+												>
+													Выполнено
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<td>Larry the Bird</td>
+											<td>Larry the Bird</td>
+											<td>
+												<button
+													type="button"
+													class="btn custom-green-btn px-5 py-2"
+												>
+													Выполнено
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<footer class="main-footer">
+			<div class="container-lg">
+				<div class="row m-0">
+					<div class="col-12 col-xl-8">
+						<div class="row main-footer-nav-row">
+							<div class="main-footer-nav-col col-3">
+								<div class="main-footer-nav-group">
+									<a href="#" class="main-footer-nav-link">Главная</a>
+									<a href="#" class="main-footer-nav-link">О компании</a>
+									<a href="#" class="main-footer-nav-link">Физическим лицам</a>
+									<a href="#" class="main-footer-nav-link">Юридическим лицам</a>
+								</div>
+							</div>
+
+							<div class="main-footer-nav-col col-3">
+								<div class="main-footer-nav-group">
+									<a href="#" class="main-footer-nav-link">О страховании</a>
+									<a href="#" class="main-footer-nav-link">Новости</a>
+									<a href="#" class="main-footer-nav-link">Контакты</a>
+								</div>
+							</div>
+
+							<div class="main-footer-nav-col-contact col-5">
+								<div class="main-footer-contact">
+									<h6 class="main-footer-title">Контакты</h6>
+									<div class="main-footer-contact-info">
+										<i
+											class="fas fa-phone-alt svg-dimmed contact-info-icon"
+										></i>
+										<a href="#" class="text">+998 (71) 207 48 84</a>
+									</div>
+									<div class="main-footer-contact-info">
+										<i
+											class="fas fa-map-marker-alt svg-dimmed contact-info-icon"
+										></i>
+										<span class="text">
+											г. Ташкент, проспект Амир Темура 89
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="
+							col-12 col-xl-4
+							mt-xl-0 mt-4
+							d-flex
+							flex-column
+							align-items-xl-end align-items-center
+							main-footer-icons__copyright
+						"
+					>
+						<div class="main-footer-icons--sm">
+							<a href="#" class="main-footer-icon--sm">
+								<i class="fab fa-facebook-f main-footer-icon"></i>
+							</a>
+							<a href="#" class="main-footer-icon--sm">
+								<i class="fab fa-instagram main-footer-icon"></i>
+							</a>
+							<a href="#" class="main-footer-icon--sm">
+								<i class="fab fa-telegram-plane main-footer-icon"></i>
+							</a>
+						</div>
+
+						<div class="main-footer-copyright">
+							<p>«Imkon sugurta» Все права защищены</p>
+							<p>© Copyright 2021 - Web developed by SOS Group</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/fonts/font-awesome/js/all.min.js"></script>
+		<script src="../assets/fonts/font-awesome/js/light.min.js"></script>
+		<script src="../assets/fonts/font-awesome/js/duotone.min.js"></script>
+		<script src="../js/pages/personalCabinet.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+</html>
